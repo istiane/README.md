@@ -4,79 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laravel App - Home</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            font-family: 'Inter', sans-serif;
-        }
-
-        .splash-container {
-            background: white;
-            padding: 4rem;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            text-align: center;
-            max-width: 500px;
-            width: 100%;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            color: #667eea;
-            margin: 0 0 1rem 0;
-        }
-
-        .subtitle {
-            font-size: 1.2rem;
-            color: #6B7280;
-            margin-bottom: 2rem;
-            font-weight: 300;
-        }
-
-        p {
-            color: #6B7280;
-            margin-bottom: 3rem;
-            line-height: 1.8;
-            font-size: 1rem;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: #667eea;
-            color: white;
-            padding: 14px 32px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s;
-            margin-top: 1rem;
-        }
-
-        .btn:hover {
-            background-color: #764ba2;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
-        }
-    </style>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body>
+<body class="min-h-screen bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center font-sans">
 
-    <div class="splash-container">
-        <h1>🚀 Laravel App</h1>
-        <p class="subtitle">Laravel Application by PrimustEtSolus</p>
-        <p>
+    <div class="bg-white p-16 rounded-3xl shadow-2xl text-center max-w-md w-full mx-4">
+        <h1 class="text-4xl text-blue-500 mb-4">🚀 Laravel App</h1>
+        <p class="text-xl text-gray-600 mb-8 font-light">Laravel Application by PrimustEtSolus</p>
+        <p class="text-gray-600 mb-12 leading-relaxed">
             This is a Laravel learning project demonstrating routing, controllers, and views.
             Explore this application and see fundamentals of Laravel.
         </p>
-        <a href="/hello" class="btn">Explore Routes</a>
+        <a href="/hello" class="inline-block bg-blue-500 text-white py-3 px-8 rounded-lg font-semibold transition-all hover:bg-purple-600 hover:-translate-y-1 hover:shadow-lg">Explore Routes</a>
     </div>
 
 </body>
